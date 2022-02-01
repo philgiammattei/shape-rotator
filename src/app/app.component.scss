@@ -1,0 +1,17 @@
+.app-container {
+  padding: 2rem;
+}
+
+.shapes-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .shape {
+    width: 300px;
+    margin: auto;
+
+    .square {
+      transform: rotate(45deg);
+    }
+  }
+}
