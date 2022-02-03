@@ -1,28 +1,31 @@
 .app-container {
   padding: 2rem;
-  background-color: black;
+
   color: white;
   height: 100%;
 }
 
 .shapes-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  background-color: black;
 
   .shape {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     width: 300px;
-    margin: auto;
+    height: 700px;
+    margin: 0 50px;
 
     svg {
-      fill: red;
+      fill: #7b1fa2;
     }
 
     .mat-slider {
       width: 100%;
-    }
-
-    .square {
-      transform: rotate(45deg);
     }
   }
 }
