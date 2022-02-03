@@ -1,5 +1,8 @@
 .app-container {
   padding: 2rem;
+  background-color: black;
+  color: white;
+  height: 100%;
 }
 
 .shapes-container {
@@ -9,6 +12,14 @@
   .shape {
     width: 300px;
     margin: auto;
+
+    svg {
+      fill: red;
+    }
+
+    .mat-slider {
+      width: 100%;
+    }
 
     .square {
       transform: rotate(45deg);

@@ -1,5 +1,7 @@
+<mat-toolbar color="primary">
+  <span>Shape Rotator</span>
+</mat-toolbar>
 <div class="app-container">
-  <h1>Shape Rotator</h1>
   <h2>
     Use this handy tool to rotate shapes. If someone asks if you can rotate
     shapes in your mind, you can lie and say you can, by studying the movement
@@ -11,6 +13,16 @@
       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <circle cx="50" cy="50" r="50" />
       </svg>
+      <mat-slider
+        class="example-margin"
+        max="360"
+        min="-360"
+        step="1"
+        value="0"
+        thumbLabel="true"
+        aria-labelledby="circle-rotation-slider"
+      >
+      </mat-slider>
     </div>
     <div class="shape">
       <svg
@@ -21,11 +33,29 @@
         <!-- Simple rectangle -->
         <rect width="150" height="150" />
       </svg>
+      <mat-slider
+        class="example-margin"
+        max="360"
+        min="-360"
+        step="1"
+        value="0"
+        thumbLabel="true"
+        aria-labelledby="circle-rotation-slider"
+      ></mat-slider>
     </div>
     <div class="shape">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
         <polygon points="50, 13.397 100, 100 0, 100" />
       </svg>
+      <mat-slider
+        class="example-margin"
+        max="360"
+        min="-360"
+        step="1"
+        value="0"
+        thumbLabel="true"
+        aria-labelledby="circle-rotation-slider"
+      ></mat-slider>
     </div>
   </div>
 </div>
